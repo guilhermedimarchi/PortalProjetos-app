@@ -1,0 +1,40 @@
+<!--
+  Generated template for the ProjectDetails page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>project-details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<h3>Detalhes do {{project.Name}}</h3>
+  <ion-list>
+    <ion-item>
+      <ion-label>Nome</ion-label>
+      <ion-badge item-right>{{project.Name}}</ion-badge>
+    </ion-item>
+     <ion-item>
+      <ion-label>Descrição</ion-label>
+      <ion-badge item-right>{{project.Description}}</ion-badge>
+    </ion-item>
+     <ion-item>
+      <ion-label>Status</ion-label>
+      <ion-badge item-right>{{project.Status}}</ion-badge>
+    </ion-item>
+     <ion-item>
+      <ion-label>Custo</ion-label>
+      <ion-badge item-right>{{project.Cost}}</ion-badge>
+    </ion-item>
+    <ion-item>
+     <ion-label>Categoria</ion-label>
+     <ion-badge item-right>{{project.Categories}}</ion-badge>
+   </ion-item>
+  </ion-list>
+</ion-content>

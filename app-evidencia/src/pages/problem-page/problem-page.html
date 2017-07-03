@@ -1,0 +1,23 @@
+<!--
+  Generated template for the ProblemPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Problemas</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <button ion-item *ngFor="let problem of problems" (click)="goToDetails(problem._id)">
+      <h2>{{ problem.Name }}</h2>
+      <ion-icon ios="ios-arrow-forward" md="md-arrow-forward" item-right></ion-icon>
+    </button>
+  </ion-list>
+</ion-content>
